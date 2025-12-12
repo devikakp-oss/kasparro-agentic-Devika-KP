@@ -120,9 +120,10 @@ The XAI analysis will focus on these 10 features:
 ## 🔗 Previous XAI Work
 
 We have existing XAI implementation that needs validation:
-- **Location:** `../../05_XAI_integration/`
-- **SHAP Results:** `../../05_XAI_integration/SHAP_analysis/`
-- **LIME Results:** `../../05_XAI_integration/LIME_analysis/`
+ - **Location (original):** `../../05_XAI_integration/` (moved)
+ - **Current XAI Archive:** `./05_XAI_integration-ORIGINAL/`  # full SHAP/LIME outputs and scripts moved here
+ - **SHAP Results (archive):** `./05_XAI_integration-ORIGINAL/SHAP_analysis/`
+ - **LIME Results (archive):** `./05_XAI_integration-ORIGINAL/LIME_analysis/`
 
 ### Action: Review and Validate Existing Work
 - [ ] Review existing SHAP implementation

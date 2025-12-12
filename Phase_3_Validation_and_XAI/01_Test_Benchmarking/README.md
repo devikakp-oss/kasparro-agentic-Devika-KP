@@ -109,7 +109,7 @@ Validate all 5 trained DoS detection models on external/unseen test data to ensu
 
 - **Test Dataset:** `../../01_data_preparation/data/UNSW_NB15_testing-set.csv`
 - **Trained Models:** `../../03_model_training/models/`
-- **Previous Benchmark Script:** `../../fixed_benchmark_testing.py`
+ - **Benchmark Script (moved):** `./scripts/fixed_benchmark_testing.py`  # original root script moved into this folder
 
 ---
 
