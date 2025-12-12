@@ -1,10 +1,10 @@
 # RANDOM FOREST TRAINING REPORT
-Generated: 2025-09-17 12:24:37
+Generated: 2025-09-22 21:07:44
 
 ## MODEL CONFIGURATION
 - Algorithm: Random Forest Classifier
 - Features: 10 network traffic features
-- Training Time: 0.31 seconds
+- Training Time: 0.35 seconds
 - Class Balance: Balanced (50-50)
 
 ## BEST HYPERPARAMETERS

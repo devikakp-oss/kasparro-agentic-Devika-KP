@@ -1,6 +1,6 @@
 {
     "model_name": "Random Forest",
-    "training_date": "2025-09-17 12:24:37.034219",
+    "training_date": "2025-09-22 21:07:44.573017",
     "best_parameters": {
         "n_estimators": 200,
         "max_depth": 20,
@@ -17,5 +17,5 @@
         "f1_score": 0.9521441889372281,
         "roc_auc": 0.9900989951040464
     },
-    "training_time_seconds": 0.3051140308380127
+    "training_time_seconds": 0.34632015228271484
 }

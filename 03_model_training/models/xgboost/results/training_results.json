@@ -1,6 +1,6 @@
 {
     "model_name": "XGBoost",
-    "training_date": "2025-09-17 12:33:40.896024",
+    "training_date": "2025-09-22 21:08:05.563140",
     "best_parameters": {
         "colsample_bytree": 0.8,
         "learning_rate": 0.2,
@@ -19,6 +19,6 @@
         "roc_auc": 0.9912564786198073,
         "cv_f1_score": 0.9540141530322338
     },
-    "training_time_seconds": 0.2893350124359131,
-    "tuning_time_seconds": 5.817026853561401
+    "training_time_seconds": 0.2361457347869873,
+    "tuning_time_seconds": 5.357105255126953
 }

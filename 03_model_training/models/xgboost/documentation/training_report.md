@@ -1,11 +1,11 @@
 # XGBOOST TRAINING REPORT
-Generated: 2025-09-17 12:33:40
+Generated: 2025-09-22 21:08:05
 
 ## MODEL CONFIGURATION
 - Algorithm: XGBoost Classifier
 - Features: 10 network traffic features
-- Training Time: 0.29 seconds
-- Hyperparameter Tuning Time: 5.82 seconds
+- Training Time: 0.24 seconds
+- Hyperparameter Tuning Time: 5.36 seconds
 - Cross-Validation: 3-fold
 - Class Balance: Balanced (50-50)
 
