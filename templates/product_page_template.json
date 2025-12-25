@@ -1,0 +1,9 @@
+{
+  "page_type": "product",
+  "name": "string",
+  "ingredients": ["string"],
+  "benefits": ["string"],
+  "usage": "string",
+  "side_effects": "string",
+  "price": "number"
+}

@@ -1,0 +1,23 @@
+{
+  "page_type": "comparison",
+  "product_a": {
+    "name": "string",
+    "concentration": "string",
+    "skin_types": ["string"],
+    "ingredients": ["string"],
+    "benefits": ["string"],
+    "usage_instructions": "string",
+    "side_effects": "string",
+    "price": "number"
+  },
+  "product_b": {
+    "name": "string",
+    "concentration": "string",
+    "skin_types": ["string"],
+    "ingredients": ["string"],
+    "benefits": ["string"],
+    "usage_instructions": "string",
+    "side_effects": "string",
+    "price": "number"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "page_type": "faq",
+  "product_name": "string",
+  "faqs": [
+    {
+      "category": "string",
+      "question": "string",
+      "answer": "string"
+    }
+  ]
+}
