@@ -14,6 +14,7 @@ from agents.input_parsing_agent import InputParsingAgent
 from agents.question_generation_agent import QuestionGenerationAgent
 from agents.content_logic_agents import ContentLogicAgents
 from agents.assembly_agents import AssemblyAgents
+from agents.comparison_agent import ComparisonAgent
 
 def test_assembly():
     # Load and process sample input through pipeline
@@ -29,16 +30,22 @@ def test_assembly():
     content_agent = ContentLogicAgents()
     blocks = content_agent.generate_blocks(normalized)
 
+    comparison_agent = ComparisonAgent()
+    product_b = comparison_agent.generate_product_b(normalized)
+
     # Assemble pages
     assembly_agent = AssemblyAgents()
     faq_page = assembly_agent.assemble_faq_page(questions, blocks, normalized)
     product_page = assembly_agent.assemble_product_page(blocks, normalized)
+    comparison_page = assembly_agent.assemble_comparison_page(normalized, product_b)
 
     print("Assembly successful!")
     print("\nFAQ Page:")
     print(json.dumps(faq_page, indent=2))
     print("\nProduct Page:")
     print(json.dumps(product_page, indent=2))
+    print("\nComparison Page:")
+    print(json.dumps(comparison_page, indent=2))
 
     # Basic validation
     assert faq_page['page_type'] == 'faq'
@@ -56,6 +63,12 @@ def test_assembly():
     assert product_page['usage'] == blocks['usage']
     assert product_page['side_effects'] == blocks['safety']
     assert product_page['price'] == 29.99
+
+    assert comparison_page['page_type'] == 'comparison'
+    assert 'product_a' in comparison_page
+    assert 'product_b' in comparison_page
+    assert comparison_page['product_a']['name'] == 'Vitamin C Serum'
+    assert comparison_page['product_b']['name'] == 'Hyaluronic Acid Moisturizer'
 
     print("All validations passed!")
 

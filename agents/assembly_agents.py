@@ -52,6 +52,41 @@ class AssemblyAgents:
             "price": float(blocks['pricing'].strip('$'))
         }
 
+    def assemble_comparison_page(self, product_a, product_b):
+        """
+        Assembles Comparison page by filling template with Product A and B.
+
+        Args:
+            product_a (dict): Internal product model A
+            product_b (dict): Generated product model B
+
+        Returns:
+            dict: Comparison page JSON
+        """
+        return {
+            "page_type": "comparison",
+            "product_a": {
+                "name": product_a['name'],
+                "concentration": product_a.get('concentration'),
+                "skin_types": product_a['skin_types'],
+                "ingredients": product_a['ingredients'],
+                "benefits": product_a['benefits'],
+                "usage_instructions": product_a['usage_instructions'],
+                "side_effects": product_a.get('side_effects'),
+                "price": product_a['price']
+            },
+            "product_b": {
+                "name": product_b['name'],
+                "concentration": product_b.get('concentration'),
+                "skin_types": product_b['skin_types'],
+                "ingredients": product_b['ingredients'],
+                "benefits": product_b['benefits'],
+                "usage_instructions": product_b['usage_instructions'],
+                "side_effects": product_b.get('side_effects'),
+                "price": product_b['price']
+            }
+        }
+
     def _generate_answer(self, category, question, blocks, product):
         """
         Generates answer for a question based on category, question text, content blocks, and product data.
