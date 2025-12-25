@@ -29,13 +29,14 @@ def test_assembly():
 
     content_agent = ContentLogicAgents()
     blocks = content_agent.generate_blocks(normalized)
+    answers = content_agent.generate_faq_answers(questions, normalized, blocks)
 
     comparison_agent = ComparisonAgent()
     product_b = comparison_agent.generate_product_b(normalized)
 
     # Assemble pages
     assembly_agent = AssemblyAgents()
-    faq_page = assembly_agent.assemble_faq_page(questions, blocks, normalized)
+    faq_page = assembly_agent.assemble_faq_page(questions, answers, normalized['name'])
     product_page = assembly_agent.assemble_product_page(blocks, normalized)
     comparison_page = assembly_agent.assemble_comparison_page(normalized, product_b)
 

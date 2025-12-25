@@ -32,9 +32,12 @@ class OrchestratorAgent:
         content_agent = ContentLogicAgents()
         content_blocks = content_agent.generate_blocks(normalized_product)
 
-        # Step 4: Assembly for FAQ and Product
+        # Step 4: FAQ Answers
+        faq_answers = content_agent.generate_faq_answers(questions, normalized_product, content_blocks)
+
+        # Step 5: Assembly for FAQ and Product
         assembly_agent = AssemblyAgents()
-        faq_page = assembly_agent.assemble_faq_page(questions, content_blocks, normalized_product)
+        faq_page = assembly_agent.assemble_faq_page(questions, faq_answers, normalized_product['name'])
         product_page = assembly_agent.assemble_product_page(content_blocks, normalized_product)
 
         # Step 5: Comparison

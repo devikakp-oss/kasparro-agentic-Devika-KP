@@ -41,7 +41,58 @@ class ContentLogicAgents:
         """Transform side effects into reusable content."""
         return product.get('side_effects', '')
 
+    def generate_faq_answers(self, questions, product, blocks):
+        """
+        Generates answers for FAQ questions using product data and content blocks.
+        This is content logic, not assembly.
+
+        Args:
+            questions (list[dict]): List of question dicts
+            product (dict): Normalized product model
+            blocks (dict): Content blocks
+
+        Returns:
+            list[str]: List of answers in question order
+        """
+        answers = []
+        for q in questions:
+            question_lower = q['question'].lower()
+            answer = self._generate_single_answer(question_lower, product, blocks)
+            answers.append(answer)
+        return answers
+
+    def _generate_single_answer(self, question_lower, product, blocks):
+        """
+        Generates answer for a single question.
+        """
+        if "concentration" in question_lower:
+            conc = product.get('concentration', 'N/A')
+            return f"The concentration is {conc}."
+        elif "skin types" in question_lower:
+            types = product.get('skin_types', [])
+            return f"This product is suitable for {', '.join(types)} skin types."
+        elif "ingredients" in question_lower:
+            return f"The key ingredients are: {', '.join(blocks['ingredients'])}."
+        elif "benefits" in question_lower:
+            return f"The benefits include: {', '.join(blocks['benefits'])}."
+        elif "use" in question_lower or "usage" in question_lower:
+            return f"Usage instructions: {blocks['usage']}."
+        elif "side effects" in question_lower or "safety" in question_lower:
+            if blocks['safety']:
+                return f"Side effects: {blocks['safety']}."
+            else:
+                return "No significant side effects reported."
+        elif "cost" in question_lower or "price" in question_lower:
+            return f"The price is {blocks['pricing']['display']}."
+        elif "name" in question_lower:
+            return f"The product is called {product['name']}."
+        else:
+            return "Please refer to product details."
+
     def _generate_pricing_block(self, product):
-        """Transform price into reusable content."""
+        """Transform price into structured pricing block."""
         price = product.get('price', 0)
-        return f"${price:.2f}"
+        return {
+            "display": f"${price:.2f}",
+            "value": price
+        }
