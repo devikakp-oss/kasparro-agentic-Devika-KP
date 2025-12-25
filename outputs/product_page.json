@@ -1,16 +1,13 @@
 {
   "page_type": "product",
-  "name": "Vitamin C Serum",
+  "name": "MinimalCare Serum",
   "ingredients": [
-    "ascorbic acid",
-    "hyaluronic acid",
-    "vitamin E"
+    "Hyaluronic Acid"
   ],
   "benefits": [
-    "brightens skin",
-    "reduces wrinkles"
+    "Hydration"
   ],
-  "usage": "Apply daily in the morning",
-  "side_effects": "mild irritation",
-  "price": 29.99
+  "usage": "Apply once daily",
+  "side_effects": null,
+  "price": 399.0
 }

@@ -1,46 +1,36 @@
 {
   "page_type": "faq",
-  "product_name": "Vitamin C Serum",
+  "product_name": "MinimalCare Serum",
   "faqs": [
     {
       "category": "General",
       "question": "What is the name of this product?",
-      "answer": "The product is called Vitamin C Serum."
-    },
-    {
-      "category": "Ingredients",
-      "question": "What is the concentration of Vitamin C Serum?",
-      "answer": "The concentration is 20%."
+      "answer": "The product is called MinimalCare Serum."
     },
     {
       "category": "Usage",
-      "question": "What skin types is Vitamin C Serum suitable for?",
-      "answer": "This product is suitable for dry, oily, combination skin types."
+      "question": "What skin types is MinimalCare Serum suitable for?",
+      "answer": "This product is suitable for Combination skin types."
     },
     {
       "category": "Ingredients",
-      "question": "What are the key ingredients in Vitamin C Serum?",
-      "answer": "The key ingredients are: ascorbic acid, hyaluronic acid, vitamin E."
+      "question": "What are the key ingredients in MinimalCare Serum?",
+      "answer": "The key ingredients are: Hyaluronic Acid."
     },
     {
       "category": "Benefits",
-      "question": "What are the benefits of using Vitamin C Serum?",
-      "answer": "The benefits include: brightens skin, reduces wrinkles."
+      "question": "What are the benefits of using MinimalCare Serum?",
+      "answer": "The benefits include: Hydration."
     },
     {
       "category": "Usage",
-      "question": "How should I use Vitamin C Serum?",
-      "answer": "Usage instructions: Apply daily in the morning."
-    },
-    {
-      "category": "Safety",
-      "question": "Are there any side effects associated with Vitamin C Serum?",
-      "answer": "Side effects: mild irritation."
+      "question": "How should I use MinimalCare Serum?",
+      "answer": "Usage instructions: Apply once daily."
     },
     {
       "category": "Pricing",
-      "question": "How much does Vitamin C Serum cost?",
-      "answer": "The price is $29.99."
+      "question": "How much does MinimalCare Serum cost?",
+      "answer": "The price is $399.00."
     }
   ]
 }

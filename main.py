@@ -10,7 +10,7 @@ from agents.orchestrator_agent import OrchestratorAgent
 
 def main():
     # Load raw input
-    input_path = 'data/sample_input.json'
+    input_path = 'data/test_input3.json'
     if not os.path.exists(input_path):
         print(f"Error: Input file {input_path} not found.")
         return

@@ -1,37 +1,29 @@
 {
   "page_type": "comparison",
   "product_a": {
-    "name": "Vitamin C Serum",
-    "concentration": "20%",
+    "name": "MinimalCare Serum",
+    "concentration": null,
     "skin_types": [
-      "dry",
-      "oily",
-      "combination"
+      "Combination"
     ],
     "ingredients": [
-      "ascorbic acid",
-      "hyaluronic acid",
-      "vitamin E"
+      "Hyaluronic Acid"
     ],
     "benefits": [
-      "brightens skin",
-      "reduces wrinkles"
+      "Hydration"
     ],
-    "usage_instructions": "Apply daily in the morning",
-    "side_effects": "mild irritation",
-    "price": 29.99
+    "usage_instructions": "Apply once daily",
+    "side_effects": null,
+    "price": 399.0
   },
   "product_b": {
     "name": "Hyaluronic Acid Moisturizer",
     "concentration": "2%",
     "skin_types": [
-      "dry",
-      "oily",
-      "combination"
+      "Combination"
     ],
     "ingredients": [
-      "ascorbic acid",
-      "hyaluronic acid",
+      "Hyaluronic Acid",
       "glycerin",
       "aloe vera"
     ],
@@ -42,6 +34,6 @@
     ],
     "usage_instructions": "Apply twice daily after cleansing",
     "side_effects": "Possible mild dryness",
-    "price": 32.99
+    "price": 438.9
   }
 }
