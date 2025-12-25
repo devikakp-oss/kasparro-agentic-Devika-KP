@@ -1,0 +1,16 @@
+{
+  "page_type": "product",
+  "name": "Vitamin C Serum",
+  "ingredients": [
+    "ascorbic acid",
+    "hyaluronic acid",
+    "vitamin E"
+  ],
+  "benefits": [
+    "brightens skin",
+    "reduces wrinkles"
+  ],
+  "usage": "Apply daily in the morning",
+  "side_effects": "mild irritation",
+  "price": 29.99
+}

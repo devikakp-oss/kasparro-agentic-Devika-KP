@@ -1,0 +1,47 @@
+{
+  "page_type": "comparison",
+  "product_a": {
+    "name": "Vitamin C Serum",
+    "concentration": "20%",
+    "skin_types": [
+      "dry",
+      "oily",
+      "combination"
+    ],
+    "ingredients": [
+      "ascorbic acid",
+      "hyaluronic acid",
+      "vitamin E"
+    ],
+    "benefits": [
+      "brightens skin",
+      "reduces wrinkles"
+    ],
+    "usage_instructions": "Apply daily in the morning",
+    "side_effects": "mild irritation",
+    "price": 29.99
+  },
+  "product_b": {
+    "name": "Hyaluronic Acid Moisturizer",
+    "concentration": "2%",
+    "skin_types": [
+      "dry",
+      "oily",
+      "combination"
+    ],
+    "ingredients": [
+      "ascorbic acid",
+      "hyaluronic acid",
+      "glycerin",
+      "aloe vera"
+    ],
+    "benefits": [
+      "hydrates skin",
+      "reduces fine lines",
+      "improves elasticity"
+    ],
+    "usage_instructions": "Apply twice daily after cleansing",
+    "side_effects": "Possible mild dryness",
+    "price": 32.99
+  }
+}
